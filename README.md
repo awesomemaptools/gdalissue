@@ -22,7 +22,7 @@ AttributeError: 'NoneType' object has no attribute 'GetRasterBand'
 ```
 
 The files tmpfile1 and tmpfile2 are from this WMS service:
-http://services.sentinel-hub.com/v1/wms/4f3d9ca1-d534-44d4-9dd2-066243bc7b1a?REQUEST=GetMap&layers=VEGETATION_INDEX___NDVI&styles=INDEX&bbox=-121.951547,36.575766,-121.908631,36.6054&height=120&width=380&CRS=CRS:84&format=image/tiff;depth=32f
+http://services.sentinel-hub.com/v1/wms/[#...]?REQUEST=GetMap&layers=VEGETATION_INDEX___NDVI&styles=INDEX&bbox=-121.951547,36.575766,-121.908631,36.6054&height=120&width=380&CRS=CRS:84&format=image/tiff;depth=32f
 
 Try another file:
 ```bash
