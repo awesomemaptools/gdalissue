@@ -1,0 +1,50 @@
+# Lenovo 10' laptop:
+
+gdallocationinfo -valonly -wgs84 4f3d9ca1-d534-44d4-9dd2-066243bc7b1a.tiff -121.941501, 36.580069
+
+gdalinfo --version
+-> GDAL 1.10.1, released 2013/08/26
+sudo add-apt-repository ppa:ubuntugis/ppa && sudo apt-get update
+sudo apt-get install gdal-bin
+gdalinfo --version
+-> GDAL 2.1.0, released 2016/04/25
+
+# Try:
+sudo apt-get install gdal
+# leads to error:
+x86_64-linux-gnu-gcc: error trying to exec 'cc1plus': execvp: No such file or directory
+# Try:
+sudo apt-get install g++
+# And:
+sudo apt-get install gdal
+# leads to error:
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+# Try:
+sudo apt-get install python-dev
+# And:
+sudo apt-get install gdal
+# Still:
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+# Try:
+sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
+# Still the same ...
+# Try:
+sudo apt-get install libxml2-dev and libxslt1-dev
+# Still the same ...
+# Try:
+sudo apt-get install build-essential python-dev
+# Try:
+sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev libssl-dev
+sudo easy_install greenlet
+sudo easy_install gevent
+# Still the same ...
+# Try:
+sudo apt-get install libpcap-dev libpq-dev
+# Still the same ...
+
+# Tried to download and:
+cd /home/jonas/Downloads/GDAL-2.2.0
+./setup.py build
+# Leads to error:
+extensions/gdal_wrap.cpp:3168:22: fatal error: cpl_port.h: No such file or directory
+
